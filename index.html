@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Apricot Space</title>
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">   
+
+        <!-- Naavbar -->
+        <div class="header__navBar">
+            <div class="container">
+                <nav>
+                    <!-- <div class="logo">
+                        <img src="logo.svg" alt="Logo Image">
+                    </div> -->
+                    <div class="hamburger">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                        <div class="line3"></div>
+                    </div>
+                    <ul class="navLinks">
+                        <div class="navLinks__linksGroup">
+                            <li><a href="#">EXPLORE A SEASON:</a></li>
+                            <li><a href="#"><img src="images/sun.svg" /></a></li>
+                            <li><a href="#"><img src="images/sun2.svg" /></a></li>
+                            <li><a href="#"><img src="images/sun3.svg" /></a></li>
+                            <li><a href="#"><img src="images/sun4.svg" /></a></li>
+                        </div>
+                        <div class="navLinks__linksGroup">
+                            <li><a href="#about">ABOUT US</a></li>
+                            <li><a href="#contact">CONTACT US</a></li>
+                            <li><a href="#blog">BLOG</a></li>
+                            <li><a href="#reviews">REVIEWS</a></li>
+                        </div>
+                        <div class="navLinks__linksGroup">
+                            <li><a href="#search">
+                                <img src="images/search.svg"/>
+                            </a></li>
+                            <li><a href="#language">ENG</a></li>
+                            <li><a href="#search">
+                                <img src="images/account.svg"/>
+                            </a></li>
+                        </div>
+                    </ul>
+                </nav>
+
+                <div class="header__main">
+                    <div  class="header__main_wrapper">
+                        <img src="images/nav.svg"/>
+                        <div class="header__main__linksGroup">
+                            <ul class="navLinks">
+                                <li><a href="#destination">DESTINATION</a></li>
+                                <li><a href="#destination">THINGS TO DO WITH US</a></li>
+                                <li><a href="#destination">RECOMMENDED TOURS</a></li>
+                                <li><a href="#destination">CREAT YOUR OWN TOUR</a></li>
+                                <li><a href="#destination">OTHER SERVICES</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <h1>CREAT YOUR OWN TOUR</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Creat Your Tour -->
+    <div class="tour">
+        <div class="container">
+            <button class="tour__create">Creat Your Tour</button>
+            <form>
+                <div class="section">
+                    <div>
+                        <label for="chooseTours">Choose Tours</label>
+                        <select name="chooseTours" id="chooseTours" form="carform">
+                            <option value="">
+                                <img src="images/location.svg" />
+                                Where to?
+                            </option>
+                            <option value="arm">ARM</option>
+                            <option value="ru">RU</option>
+                            <option value="us">US</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="arrivalDate">Arrival Date</label>
+                        <input type="date" id="arrivalDate" name="arrivalDate" value="2019-05-02" min="2018-01-01" max="2018-12-31">
+                    </div>
+                    <div>
+                        <label for="arrivalDate">Departure Date</label>
+                        <input type="date" id="arrivalDate" name="arrivalDate" value="2019-05-02" min="2018-01-01" max="2018-12-31">
+                    </div>
+                    <div>
+                        <label for="hotels">Hotels</label>
+                        <input placeholder="Choose Stars" id="hotels">
+                    </div>
+                </div>
+
+                <div class="section">
+                    <div>
+                        <label for="guide">Guide</label>
+                        <select name="guide" id="guide" form="carform">
+                            <option value="">
+                                Choose Leanguage
+                            </option>
+                            <option value="arm">ARM</option>
+                            <option value="ru">RU</option>
+                            <option value="us">US</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="Adults">Adults</label>
+                        <select name="Adults" id="Adults" form="carform">
+                            <option value="">
+                                (16+) (2)
+                            </option>
+                            <option value="arm">ARM</option>
+                            <option value="ru">RU</option>
+                            <option value="us">US</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="Children">Children</label>
+                        <input type="number" id="Children" placeholder="(1)">
+                    </div>
+                    <div><button class="tour__send ">Request</button></div>
+                </div>
+
+                <div class="section__checked">
+                    <div>
+                        <input type="checkbox" id="date" name="date" checked>
+                        <label for="date">I am flexible on date</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="Pets" name="Pets" checked>
+                        <label for="Pets">Traveling With Pets</label>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- CHOOSE YOUR DESTINATION -->
+    <div class="destination">
+        <div class="container">
+            <h2><span>+</span>
+                CHOOSE YOUR DESTINATION</h2>
+            <div class="destination__filter">
+                <button class="active btn">Top</button>
+                <button class="btn">Destination Name 1</button>
+                <button class="btn">Destination 2</button>
+                <button class="btn">Destination Name 3</button>
+                <button class="btn">Destination Name 4</button>
+                <button class="btn">Destination 5</button>
+                <button class="btn">Destination Name 6</button>
+                <button class="btn">Destination Name 7</button>
+            </div>
+            <div class="destination__cartsWrapper">
+                <div class="destination__cartWrapper">
+                    <div class="destination__cart">
+                        <img src="images/info.svg" />
+                        <div>
+                            <img src="images/click.svg" />
+                        </div>
+                    </div>
+                    <h4>Name of Places 1</h4>
+                </div>
+                <div class="destination__cartWrapper">
+                    <div class="destination__cart">
+                        <img src="images/info.svg" />
+                        <div>
+                            <img src="images/click.svg" />
+                        </div>
+                    </div>
+                    <h4>Name of Places 1</h4>
+                </div>
+                <div class="destination__cartWrapper">
+                    <div class="destination__cart">
+                        <img src="images/info.svg" />
+                        <div>
+                            <img src="images/click.svg" />
+                        </div>
+                    </div>
+                    <h4>Name of Places 1</h4>
+                </div>
+                <div class="destination__cartWrapper">
+                    <div class="destination__cart">
+                        <img src="images/info.svg" />
+                        <div>
+                            <img src="images/click.svg" />
+                        </div>
+                    </div>
+                    <h4>Name of Places 1</h4>
+                </div>
+                <div class="destination__cartWrapper">
+                    <div class="destination__cart">
+                        <img src="images/info.svg" />
+                        <div>
+                            <img src="images/click.svg" />
+                        </div>
+                    </div>
+                    <h4>Name of Places 1</h4>
+                </div>
+                <div class="destination__cartWrapper">
+                    <div class="destination__cart">
+                        <img src="images/info.svg" />
+                        <div>
+                            <img src="images/click.svg" />
+                        </div>
+                    </div>
+                    <h4>Name of Places 1</h4>
+                </div>
+                <div class="destination__cartWrapper">
+                    <div class="destination__cart">
+                        <img src="images/info.svg" />
+                        <div>
+                            <img src="images/click.svg" />
+                        </div>
+                    </div>
+                    <h4>Name of Places 1</h4>
+                </div>
+                <div class="destination__cartWrapper">
+                    <div class="destination__cart">
+                        <img src="images/info.svg" />
+                        <div>
+                            <img src="images/click.svg" />
+                        </div>
+                    </div>
+                    <h4>Name of Places 1</h4>
+                </div>
+                <div class="destination__cartWrapper">
+                    <div class="destination__cart">
+                        <img src="images/info.svg" />
+                        <div>
+                            <img src="images/click.svg" />
+                        </div>
+                    </div>
+                    <h4>Name of Places 1</h4>
+                </div>
+                <div class="destination__cartWrapper">
+                    <div class="destination__cart">
+                        <img src="images/info.svg" />
+                        <div>
+                            <img src="images/click.svg" />
+                        </div>
+                    </div>
+                    <h4>Name of Places 1</h4>
+                </div>
+                <div class="destination__cartWrapper">
+                    <div class="destination__cart">
+                        <img src="images/info.svg" />
+                        <div>
+                            <img src="images/click.svg" />
+                        </div>
+                    </div>
+                    <h4>Name of Places 1</h4>
+                </div>
+                <div class="destination__cartWrapper">
+                    <div class="destination__cart">
+                        <img src="images/info.svg" />
+                        <div>
+                            <img src="images/click.svg" />
+                        </div>
+                    </div>
+                    <h4>Name of Places 1</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- THINGS TO DO WITH US -->
+    <div class="withUs">
+        <div class="container">
+            <h2><span>+</span>
+                THINGS TO DO WITH US
+            </h2>
+            <div class="withUs__filter destination__filter">
+                <button class="active btn">Top</button>
+                <button class="btn">Sport</button>
+                <button class="btn">leisurely</button>
+                <button class="btn">Other</button>
+            </div>
+            <div class="withUs__images destination__cartsWrapper">
+                <div class="destination__cartWrapper">
+                    <div class="destination__cart">
+                        <img src="images/info.svg" />
+                        <div>
+                            <img src="images/click.svg" />
+                        </div>
+                    </div>
+                    <h4>Name of Places 1</h4>
+                </div>
+                <div class="destination__cartWrapper">
+                    <div class="destination__cart">
+                        <img src="images/info.svg" />
+                        <div>
+                            <img src="images/click.svg" />
+                        </div>
+                    </div>
+                    <h4>Name of Places 1</h4>
+                </div>
+                <div class="destination__cartWrapper">
+                    <div class="destination__cart">
+                        <img src="images/info.svg" />
+                        <div>
+                            <img src="images/click.svg" />
+                        </div>
+                    </div>
+                    <h4>Name of Places 1</h4>
+                </div>
+                <div class="destination__cartWrapper">
+                    <div class="destination__cart">
+                        <img src="images/info.svg" />
+                        <div>
+                            <img src="images/click.svg" />
+                        </div>
+                    </div>
+                    <h4>Name of Places 1</h4>
+                </div>
+                <div class="destination__cartWrapper">
+                    <div class="destination__cart">
+                        <img src="images/info.svg" />
+                        <div>
+                            <img src="images/click.svg" />
+                        </div>
+                    </div>
+                    <h4>Name of Places 1</h4>
+                </div>
+                <div class="destination__cartWrapper">
+                    <div class="destination__cart">
+                        <img src="images/info.svg" />
+                        <div>
+                            <img src="images/click.svg" />
+                        </div>
+                    </div>
+                    <h4>Name of Places 1</h4>
+                </div>
+                <div class="destination__cartWrapper">
+                    <div class="destination__cart">
+                        <img src="images/info.svg" />
+                        <div>
+                            <img src="images/click.svg" />
+                        </div>
+                    </div>
+                    <h4>Name of Places 1</h4>
+                </div>
+                <div class="destination__cartWrapper">
+                    <div class="destination__cart">
+                        <img src="images/info.svg" />
+                        <div>
+                            <img src="images/click.svg" />
+                        </div>
+                    </div>
+                    <h4>Name of Places 1</h4>
+                </div>
+                <div class="destination__cartWrapper">
+                    <div class="destination__cart">
+                        <img src="images/info.svg" />
+                        <div>
+                            <img src="images/click.svg" />
+                        </div>
+                    </div>
+                    <h4>Name of Places 1</h4>
+                </div>
+                <div class="destination__cartWrapper">
+                    <div class="destination__cart">
+                        <img src="images/info.svg" />
+                        <div>
+                            <img src="images/click.svg" />
+                        </div>
+                    </div>
+                    <h4>Name of Places 1</h4>
+                </div>
+                <div class="destination__cartWrapper">
+                    <div class="destination__cart">
+                        <img src="images/info.svg" />
+                        <div>
+                            <img src="images/click.svg" />
+                        </div>
+                    </div>
+                    <h4>Name of Places 1</h4>
+                </div>
+                <div class="destination__cartWrapper">
+                    <div class="destination__cart">
+                        <img src="images/info.svg" />
+                        <div>
+                            <img src="images/click.svg" />
+                        </div>
+                    </div>
+                    <h4>Name of Places 1</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- OTHER SERVICES -->
+    <div class="services">
+        <div class="services__cart"></div>
+    </div>
+
+    <!-- YOUR CHOICE -->
+    <div class="choice">
+        <div class="choice__cart"></div>
+    </div>
+
+    <!-- Contact us -->
+    <div class="contactUs"></div>
+
+    <!-- Footer -->
+    <div class="footer"></div>
+</body>
+</html>
